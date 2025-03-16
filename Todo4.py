@@ -1,5 +1,5 @@
 import streamlit as st
-st.title('Bé tập làm toán')
+st.title('Web thử')
 col1,col2,col3, = st.columns(3)
 with col1:
     a = st.number_input('a')
