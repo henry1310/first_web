@@ -10,10 +10,10 @@ with col3:
 
 res = st.number_input('Nhập kết quả')
 if st.button('Kiểm tra'):
-    if op == '\\+': result = a+b
-    elif op == '\\-': result = a - b
-    elif op == 'x': result = a*b
-    elif op == ':': result = a/b
+    if op == '\\+': result = round(a+b,2)
+    elif op == '\\-': result = round(a - b,2)
+    elif op == 'x': result = round(a*b,2)
+    elif op == ':': result = round(a/b,2)
     if result == res:
         st.success('Chính xác')
         st.balloons()
